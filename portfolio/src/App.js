@@ -1,3 +1,4 @@
+import React from "react";
 
 import './App.css';
 import Navs from './components/Navs/Navs.js';
@@ -5,16 +6,16 @@ import Home from './components/Home/Home.js';
 import Skills from './components/Skills/Skills.js';
 import Education from './components/Education/Education.js';
 import Contact from './components/Contact/Contact.js';
+import Footer from './components/Footer/Footer.js';
 
 import  { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
- // <div className="App"> 
- //</div> 
- return (
- <Router>
-<Navs/>  
 
+function App() {
+
+  return (
+  <Router>
+    <Navs/>  
 <main>
 
     <Switch>
@@ -25,7 +26,7 @@ function App() {
     </Switch>
     
   </main>
-
+<Footer />
   </Router>
 );
     

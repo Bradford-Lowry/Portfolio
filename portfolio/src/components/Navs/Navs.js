@@ -1,29 +1,34 @@
-//import { useState } from 'react';
-import './Navs.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navs = (props) => {
 
- const handleNavClick = () => {
-     console.log('poot')
- }
- 
+
+ const location = useLocation();
+ const { pathname } = location;
+ const splitLoc = pathname.split("/");
+ console.log(location);
+ console.log(pathname);
+ console.log(splitLoc[1]);
+
  return (
      <nav>
-<ul onClick={ handleNavClick }>
-    { props.title }
-<Link to='/'>
-    <li>home</li> 
-    </Link>
-<Link to='/skills'>
-    <li>skills</li> 
-    </Link>
-<Link to='/education'>
-    <li>education</li> 
-    </Link>
-<Link to='/contact'>
-    <li>contact</li> 
-    </Link>
+
+<ul>
+    
+<NavLink exact activeClassName="active" to='/'>
+    <li className={ splitLoc[1] === "" ? "active" : "" }>home</li> 
+    </NavLink>
+<NavLink exact activeClassName="active" to='/skills'>
+    <li className={ splitLoc[1] === "skills" ? "active" : "" }>skills</li> 
+    </NavLink>
+<NavLink exact activeClassName="active" to='/education'>
+    <li className={ splitLoc[1] === "education" ? "active" : "" }>education</li> 
+    </NavLink>
+<NavLink exact activeClassName="active" to='/contact'>
+    <li className={ splitLoc[1] === "" ? "contact" : "" }>contact</li> 
+    </NavLink>
 </ul>
 </nav>
     )

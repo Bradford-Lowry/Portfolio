@@ -1,14 +1,13 @@
-
+import React from "react";
 import Logo from '../Logo/Logo.js';
-import CTA from '../CTA/CTA.js';
-
 
 const Home = () => {
     return (
-<section>
+<section className= { 'subSection' }>
 <Logo />
 <h1>i do creative stuff.</h1>
-<CTA />
+<button>have a look</button>
+
 </section>
     );
 

@@ -1,11 +1,8 @@
+
 .logoBox {
-    width: 32vw;
-    min-width: 400px;
-    height: 24vh;
-    margin: 2em auto;
     background-image:url('./logo-BRAD.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
-  
+ 

@@ -1,9 +1,11 @@
+import React from "react";
+
 const Skills = () => {
     return (
-<section>
+<section className= { 'subSection' }>
 <h1>skills to pay the bills</h1>
 <h2>what i do</h2>
-<ul>
+<ul className= { 'skillsList' }>
 <li>design</li>    
 <li>animation</li>
 <li>after effects</li>

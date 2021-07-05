@@ -1,13 +1,212 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #EEE;
+  font-family: 'Open Sans', sans-serif;
+   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+ 
+}
+
+.App-link {
+}
+
+main{
+  width: 80%;
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.subSection {
+  width: 60%;
+  height: 90vh;
+  flex: 50%;
+  margin: 0 auto;
+padding-top: 120px;
+}
+
+.logoBox {
+  width: 32vw;
+  min-width: 320px;
+  height: 4vh;
+  min-height: 80px;
+  margin: 0 auto;
+  padding-top: 15vh;
+}
+
+.portfolioPiece {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 32px;
+  border: 1px solid green;
+}
+
+h1 {
+ font-size: 2em;
+  font-weight: 700;
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.skillsList {
+  font-size: 1.25em;
+  text-align: left;
+  list-style: none;
+}
+
+.skillsList li::before {
+  content: "\00B6";  
+  color: #E51539; 
+  font-weight: 700; 
+  line-height: 2em;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+nav ul {
+  position: fixed;
+  width: 80%;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+ 
+}
+
+nav ul li {
+  display: inline-block;
+  width: 25%;
+  height: 3em;
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+  line-height: 3em;
+  font-weight: bold;
+  background-color: #F99827;
+  color:white;
+}
+
+nav ul li:hover {
+   background-color: #E51539;
+}
+
+.active {
+  background-color: #E51539;
+}
+
+.redText {
+  color:#E51539;
+}
+
+.error {
+  color:#E51539;
+}
+
+footer {
+  width: 80%;
+  height: 80px;
+  flex-shrink: 0;
+  margin: 0px auto;
+  background-color:#F99827;
+}
+
+#copyright{
+  width: 120px;
+  float: left;
+  padding: 10px;
+  color: white;
+  margin: 0px;
+}
+
+#social {
+  width: 360px;
+  float: right;
+  padding: 10px;
+}
+
+.soMeIcon {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0px;
+  float: right;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+background-color:white;
+color: #E51539;
+}
+
+.fa-twitter {
+  background-color:white;
+  color: #E51539;
+}
+
+.fa-linkedin {
+  background-color:white;
+  color: #E51539;
+}
+
+button {
+  width: 120px;
+  height: 32px;
+  background-color:#E51539;
+  color: white;
+  margin: 18px auto 20px auto;
+  border-color: #F99827;
+  border-radius: 5%;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 32px;
+  text-align: left;
+
+  background-color:#EEE;
+  border: 1px solid black;
+  padding: 2em;
+}
+
+input {
+  display: block;
+  width: 200px;
+  padding: .5em;
+  color:black;
+}
+
+input[type=submit] {
+  width: 80px;
+  height: 32px;
+  background-color:#E51539;
+  color: white;
+  margin: 18px 0px 20px 0px;
+  border-color: #F99827;
+  border-radius: 5%;
+}
+
+input[type=text] {
+
+}
+
+label {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {	
 }
